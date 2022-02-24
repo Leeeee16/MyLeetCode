@@ -10,10 +10,10 @@ public class BinarySearch {
 
     // 整数二分, 返回下标，不在数组中则返回-1
     public static int bsearch_1(int[] nums, int l, int r, int key) {
-        if(l >= r) return -1;
-        while(l < r) {
+        if (l >= r) return -1;
+        while (l < r) {
             int mid = l + r >> 1; // mid = l + (r - l) / 2;
-            if(nums[mid] >= key) r = mid;
+            if (nums[mid] >= key) r = mid;
             else l = mid + 1;
         }
         return l;
